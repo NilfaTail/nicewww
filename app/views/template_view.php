@@ -8,7 +8,9 @@
 	<title>nicewww.ru - Главная</title>
 
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<!--
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet" />
+	-->
 
 </head>
 

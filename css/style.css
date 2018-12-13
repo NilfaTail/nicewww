@@ -11,7 +11,6 @@ body {
 	width:100%;
 	height:100vh;
 	color: #393939;
-	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
 }
 #particles-js {
@@ -33,9 +32,34 @@ header, footer {
   font-size: 1.1em;
 }
 
+/*
+** FONTS
+*/
+
+@font-face {
+font-family: 'Roboto';
+src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Roboto Slab';
+src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Roboto Slab Bold';
+src: url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
 }
 
@@ -44,6 +68,7 @@ h1 {
   margin: 0 0 16px;
   padding-bottom: 8px;
   text-transform: uppercase;
+  font-family: 'Roboto Slab Bold';
 }
 h1:after {
   content: '';
@@ -64,12 +89,12 @@ h1:after {
 h2 {
   font-size: 24px;
   margin: 0 0 14px;
-  padding-bottom: 4px;
+  padding: 4px 0;
 }
 h3 {
   font-size: 20px;
   margin-bottom: 6px;
-  padding-bottom: 4px;
+  padding: 4px 0;
 }
 h4 {
   font-size: 18px; 
@@ -79,13 +104,15 @@ h4 {
 h5 {
   font-size: 16px;
   margin-bottom: 3px;
+  font-weight: 600;
 }
 h6 {
   font-size: 14px;
   margin-bottom: 2px;
+  font-weight: 600;
 }
 p {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.2;
   margin-bottom: 8px;
   padding-top: 2px;
