@@ -16,27 +16,32 @@
 
 <body>
 	<div id="particles-js"></div>
-	<header>
-		<div class="container">
-			<div class="">
-				<ul class="nav nav-top">
-					<li class="nav-item">
-						<a href="/">Home</a></li>
-					<li class="nav-item">
-						<a href="/examples">Примеры</a>
-						<ul class="nav nav-top nav-second">
-							<li>
-								<a href="fiches/ficha-1-fixed-animated-menu.html">Фиксированное меню</a>
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a href="/gui">GUI</a>
-					</li>
-					<li><a href="/services">Услуги</a></li>
-					<li><a href="/portfolio">Портфолио</a></li>
-					<li><a href="/contacts">Контакты</a></li>
-				</ul>
+	<header >
+		<div id="navigationTop">
+			<div class="container">
+				<div class="">
+					<ul class="nav nav-top">
+						<li class="nav-item">
+							<a href="/">Home</a></li>
+						<li class="nav-item">
+							<a href="/gui">GUI и второе меню</a>
+							<ul class="nav nav-top nav-second">
+								<li>
+									<a href="">Ссылка 1</a>
+								</li>
+								<li>
+									<a href="">Ссылка 2</a>
+								</li>
+								<li>
+									<a href="">Ссылка 3</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="/services">Услуги</a></li>
+						<li><a href="/portfolio">Портфолио</a></li>
+						<li><a href="/contacts">Контакты</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -51,9 +56,27 @@
 		</div>	
 	</div>
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+	<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="/js/particles/particles.js" defer></script>
 	<script type="text/javascript" src="/js/particles/parts.js" defer></script>
+
+	<script>
+		var h_hght = 0;
+		var h_mrg = 0;
+
+		$(function(){
+			$(window).scroll(function(){ // скролим
+				var top = $(this).scrollTop(); // расстояние до верха
+				var navTop = $('#navigationTop');
+				if (top+h_mrg < h_hght) {
+					navTop.css('top',(h_hght - top))
+				} else {
+					navTop.css('top', h_mrg)
+				}
+			});
+		});
+	</script>
+
 </body>
 
 </html>

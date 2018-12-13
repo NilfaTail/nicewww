@@ -13,6 +13,25 @@ body {
 	color: #393939;
 	box-sizing: border-box;
 }
+
+header, footer {
+  display: block;
+  color: #fff;
+  font-size: 1em;
+}
+
+#navigationTop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background: #313740;
+  width: 100%;
+}
+
+/*
+** blocks
+*/
+
 #particles-js {
     background: #262626;
     position: fixed;
@@ -21,16 +40,33 @@ body {
     width: 100vw;
     height: 100vh;
 }
-header {
+
+.container {
+  widht: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  } 
+}
+
+.page {
+  margin: 70px auto 10px;
+  padding: 10px 0;
+}
+
+article {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid #dedede;
+  padding: 20px;
+  margin: 15px 0;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
-header, footer {
-  display: block;
-  background: #313740;
-  color: #fff;
-  font-size: 1.1em;
-}
+
 
 /*
 ** FONTS
@@ -213,36 +249,11 @@ ul.nav.nav-top.nav-second {
   display: none;
 }
 
+ul.nav.nav-top.nav-second li{
+  display: block;
+}
+
 ul.nav.nav-top li:hover ul.nav.nav-top.nav-second {
   display: block;
 }
 
-/*
-** blocks
-*/
-
-.container {
-	widht: 100%;
-	padding: 0 10px;
-	margin: 0 auto;
-}
-
-@media (min-width: 1200px) {
-	.container {
-		max-width: 1140px;
-	}	
-}
-
-.page {
-  margin: 10px auto;
-  padding: 10px 0;
-}
-
-article {
-  background: rgba(255, 255, 255, 1);
-  border: 1px solid #dedede;
-  padding: 20px;
-  margin: 15px 0;
-  position: relative;
-  z-index: 1;
-}
