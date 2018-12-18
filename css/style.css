@@ -115,7 +115,7 @@ h2, h3, h4, h5, h6 {
 h1 {
   font-size: 26px;
   margin: 0 0 16px;
-  padding-bottom: 8px;
+  padding: 16px 0 16px;
   text-transform: uppercase;
   font-family: 'Roboto Slab Bold';
 }
@@ -215,6 +215,17 @@ ul,ol {
 ** top navigation / navigation-horizontal
 */
 
+.hide-nav {
+  display: none;
+}
+.hide-nav-button {
+  padding-bottom: 10px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
 ul.nav {
   margin: 0;
   padding: 0;
@@ -262,11 +273,47 @@ ul.nav.nav-top.nav-second {
   display: none;
 }
 
-ul.nav.nav-top.nav-second li{
+ul.nav.nav-top.nav-second li {
   display: block;
+  padding:0;
+}
+
+ul.nav.nav-top.nav-second li a {
+  display: block;
+  padding: 7px 3px;
+}
+
+ul.nav.nav-top.nav-second li a:hover {
+  background: rgba(49, 55, 64, 1);
 }
 
 ul.nav.nav-top li:hover ul.nav.nav-top.nav-second {
   display: block;
 }
 
+@media (max-width: 360px) {
+  .hide-nav {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  ul.nav.nav-top {
+    display: none;
+  }
+  ul.nav.nav-top li {
+    display: block;
+  }
+  ul.nav.nav-top li a {
+    display: block;
+    position: relative;
+    border-bottom: 1px solid;
+  }
+  ul.nav.nav-top.nav-second {
+    display: block;
+    position: relative;
+    top: 4px;
+    width: 98%;
+    margin-left: 4px;
+  }
+}

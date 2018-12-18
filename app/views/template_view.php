@@ -2,15 +2,13 @@
 <html lang="ru">
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<title>nicewww.ru - Главная</title>
 
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
-	<!--
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet" />
-	-->
 
 </head>
 
@@ -25,11 +23,16 @@
 		<div id="navigationTop">
 			<div class="container">
 				<div class="">
+					<div class="hide-nav">
+						<div class="hide-nav-button">menu</div>
+					</div>
+
+
 					<ul class="nav nav-top">
 						<li class="nav-item">
 							<a href="/">Home</a></li>
 						<li class="nav-item">
-							<a href="/gui">GUI и второе меню</a>
+							<a href="javascript:void(0);" class="nav-item-second">GUI и второе меню</a>
 							<ul class="nav nav-top nav-second">
 								<li>
 									<a href="">Ссылка 1</a>
@@ -62,26 +65,9 @@
 	</div>
 
 	<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
 	<script type="text/javascript" src="/js/particles/particles.js" defer></script>
 	<script type="text/javascript" src="/js/particles/parts.js" defer></script>
-
-	<script>
-		// скрипт прокрутки меню и фиксации его в верху экрана
-		var h_hght = 0;   // высота 
-		var h_mrg = -100; // высота отступа дива с потенциальным логотипом
-
-		$(function(){
-			$(window).scroll(function(){       // скролим
-				var top = $(this).scrollTop(); // расстояние до верха
-				var navTop = $('#navigationTop');
-				if (top+h_mrg < h_hght) {
-					navTop.css('top',(h_hght - top))
-				} else {
-					navTop.css('top', h_mrg)  // устанавливаем значение отступа
-				}
-			});
-		});
-	</script>
 
 </body>
 
