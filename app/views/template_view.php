@@ -9,6 +9,7 @@
 	<title>nicewww.ru - Главная</title>
 
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 </head>
 
@@ -31,8 +32,8 @@
 					<ul class="nav nav-top">
 						<li class="nav-item">
 							<a href="/">Home</a></li>
-						<li class="nav-item">
-							<a href="javascript:void(0);" class="nav-item-second">GUI и второе меню</a>
+						<li class="nav-item nav-item-second">
+							<a href="javascript:void(0);" class="">GUI и второе меню <i class="fas fa-caret-down"></i></a>
 							<ul class="nav nav-top nav-second">
 								<li>
 									<a href="">Ссылка 1</a>
@@ -45,9 +46,23 @@
 								</li>
 							</ul>
 						</li>
-						<li><a href="/services">Услуги</a></li>
-						<li><a href="/portfolio">Портфолио</a></li>
-						<li><a href="/contacts">Контакты</a></li>
+						<li class="nav-item"><a href="/services">Услуги</a></li>
+						<li class="nav-item"><a href="/portfolio">Портфолио</a></li>
+						<li class="nav-item nav-item-second">
+							<!--<a href="/contacts">Контакты</a>-->
+							<a href="javascript:void(0);" class="">Контакты <i class="fas fa-caret-down"></i></a>
+							<ul class="nav nav-top nav-second">
+								<li>
+									<a href="">Ссылка 1</a>
+								</li>
+								<li>
+									<a href="">Ссылка 2</a>
+								</li>
+								<li>
+									<a href="">Ссылка 3</a>
+								</li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>

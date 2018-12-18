@@ -16,8 +16,20 @@ $(document).ready(function() {
 
 	$(".hide-nav-button").click(function(){
 		$(".nav.nav-top").toggle(500);
+		
 		$(".nav-item-second").click(function(){
-			$(".nav.nav-top.nav-second").toggle(500);
+			var secondLevelMenu = $(this).children(".nav.nav-top.nav-second");
+
+			if (!secondLevelMenu.hasClass("active")) {
+				secondLevelMenu.show(500);
+				secondLevelMenu.addClass("active");
+			} else {
+				secondLevelMenu.hide(500);
+				secondLevelMenu.removeClass("active");
+			}
+			
+
+		
 		});
 	});
 
