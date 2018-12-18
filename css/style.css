@@ -20,12 +20,25 @@ header, footer {
   font-size: 1em;
 }
 
+.header-info {
+  position: relative;
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: #313740;
+  background: -moz-linear-gradient(top, #034816 0%, #313740 100%); 
+  background: -webkit-linear-gradient(top, #034816 0%,#313740 100%); 
+  background: linear-gradient(to bottom, #034816 0%,#313740 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#034816', endColorstr='#313740',GradientType=0 );
+}
+
 #navigationTop {
   position: fixed;
   z-index: 100;
   top: 0;
   background: #313740;
   width: 100%;
+  margin-top: 100px;  
 }
 
 /*

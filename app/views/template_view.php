@@ -17,6 +17,11 @@
 <body>
 	<div id="particles-js"></div>
 	<header >
+		<div class="header-info">
+			<div class="container">
+				<h1 class="text-align">that's my site!</h1>
+			</div>
+		</div>
 		<div id="navigationTop">
 			<div class="container">
 				<div class="">
@@ -61,17 +66,18 @@
 	<script type="text/javascript" src="/js/particles/parts.js" defer></script>
 
 	<script>
-		var h_hght = 0;
-		var h_mrg = 0;
+		// скрипт прокрутки меню и фиксации его в верху экрана
+		var h_hght = 0;   // высота 
+		var h_mrg = -100; // высота отступа дива с потенциальным логотипом
 
 		$(function(){
-			$(window).scroll(function(){ // скролим
+			$(window).scroll(function(){       // скролим
 				var top = $(this).scrollTop(); // расстояние до верха
 				var navTop = $('#navigationTop');
 				if (top+h_mrg < h_hght) {
 					navTop.css('top',(h_hght - top))
 				} else {
-					navTop.css('top', h_mrg)
+					navTop.css('top', h_mrg)  // устанавливаем значение отступа
 				}
 			});
 		});
