@@ -55,7 +55,7 @@ header, footer {
 }
 
 .container {
-  widht: 100%;
+  width: 100%;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -138,7 +138,7 @@ h1:after {
 h2 {
   font-size: 24px;
   margin: 0 0 14px;
-  padding: 4px 0;
+  padding: 14px 0 0px;
 }
 h3 {
   font-size: 20px;
@@ -190,6 +190,9 @@ ul,ol {
 .underline {
   text-decoration: underline;
 }
+.strike {
+  text-decoration: line-through;
+}
 .white {
   color: #fff;
 }
@@ -209,6 +212,13 @@ ul,ol {
 }
 .p-10 {
   padding: 10px;
+}
+
+code, pre {
+  background: #dedede;
+  padding: 0 4px;
+  font-size: 14px;
+  font-family: monospace;
 }
 
 /*
@@ -317,3 +327,49 @@ ul.nav.nav-top li:hover ul.nav.nav-top.nav-second {
     margin-left: 4px;
   }
 }
+
+/*
+** tables
+*/
+
+table.table {
+  width: 100%;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+}
+table.table caption {
+  text-align: left;
+  font-weight: bold;
+  padding-top: 8px;
+  margin-bottom: 2px;
+}
+
+table.table caption code, 
+table.table caption pre {
+  background: #dedede;
+  padding: 0 4px;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+table.table thead tr th {
+  color: #fff;
+  padding: 6px 4px;
+  border: 1px solid #5dbd7d;
+  background: #313740;
+  color: #5dbd7d;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+table.table tbody td {
+  padding: 6px 4px;
+  border: 1px solid #5dbd7d;
+  font-size: 14px;
+}
+
+table.table.table-hovered tbody tr:hover{
+  background: #cde5cd;
+}
+
+

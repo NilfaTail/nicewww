@@ -13,22 +13,23 @@ class Route
 		// получаем имя контроллера
 		if ( !empty($routes[1]) )
 		{	
-			$controller_name = $routes[1];
+			$controller_name = $routes[1]; // для страницы services -> services
 		}
 		
+
 		// получаем имя экшена
 		if ( !empty($routes[2]) )
 		{
-			$action_name = $routes[2];
+			$action_name = $routes[2]; // для страницы services -> index (по умолчанию)
 		}
+		
 
 		// добавляем префиксы
-		$model_name = 'Model_'.$controller_name;
-		$controller_name = 'Controller_'.$controller_name;
-		$action_name = 'action_'.$action_name;
+		$model_name = 'Model_'.$controller_name;           // Model_services
+		$controller_name = 'Controller_'.$controller_name; // Controller_services
+		$action_name = 'action_'.$action_name;             //action_index
 
 		// подцепляем файл с классом модели (файла модели может и не быть)
-
 		$model_file = strtolower($model_name).'.php';
 		$model_path = "app/models/".$model_file;
 		if(file_exists($model_path))
@@ -37,7 +38,7 @@ class Route
 		}
 
 		// подцепляем файл с классом контроллера
-		$controller_file = strtolower($controller_name).'.php';
+		$controller_file = strtolower($controller_name).'.php'; // controller_services.php
 		$controller_path = "app/controllers/".$controller_file;
 		if(file_exists($controller_path))
 		{
@@ -53,8 +54,8 @@ class Route
 		}
 		
 		// создаем контроллер
-		$controller = new $controller_name;
-		$action = $action_name;
+		$controller = new $controller_name; // controller_services
+		$action = $action_name; 			// action_index
 		
 		if(method_exists($controller, $action))
 		{
@@ -64,7 +65,7 @@ class Route
 		else
 		{
 			// здесь также разумнее было бы кинуть исключение
-			Route::ErrorPage404();
+			Route::ErrorPage404(); 
 		}
 	
 	}
