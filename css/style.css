@@ -68,6 +68,7 @@ header, footer {
 .page {
   margin: 70px auto 10px;
   padding: 10px 0;
+  position: relative;
 }
 
 .article {
@@ -79,6 +80,22 @@ header, footer {
   z-index: 1;
 }
 
+.article.article-70 {
+  display: inline-block;
+  width: 70%;
+}
+
+.rightNavigation {
+  width: 300px;
+  position: fixed;
+  top: 195px;
+  left: calc(62% + 45px);
+  /*right: 0;*/
+
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid #dedede;
+  padding: 20px;
+}
 
 /*
 ** FONTS
@@ -386,4 +403,16 @@ table.table.table-hovered tbody tr:hover{
   background: #cde5cd;
 }
 
-
+.rightNavigation ul {
+  list-style: none;
+}
+.rightNavigation ul li {
+  padding: 8px 0;
+}
+.rightNavigation ul li a {
+  text-decoration: none;
+  text-shadow: none;
+}
+.rightNavigation ul li a:hover {
+  border-bottom: 1px solid;
+}
