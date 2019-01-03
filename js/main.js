@@ -1,12 +1,20 @@
 $(document).ready(function() {
 
-	// // скрипт прокрутки меню и фиксации его в верху экрана
-	var h_hght = 0;   // высота 
-	var h_mrg = -100; // высота отступа дива с потенциальным логотипом
+	// скрипт прокрутки меню и фиксации его в верху экрана
+	var h_hght = 100; // высота дива с приветствием и логотипом
+	var h_mrg = 0; // высота отступа, когда шапка не видна
 
-	$(window).scroll(function(){       // скролим
-		var top = $(this).scrollTop(); // расстояние до верха
-		var navTop = $('#navigationTop');
+	var top = $(this).scrollTop(); // расстояние до верха
+	var navTop = $('#navigationTop'); // топ-меню	
+
+	// до скрола, если страница загрузилась на середине контента
+	if (top - h_hght >= 0) {
+		navTop.css('top', h_mrg);
+	}
+	
+	// скролим
+	$(window).scroll(function() {  
+		top = $(this).scrollTop();
 		if (top+h_mrg < h_hght) {
 			navTop.css('top',(h_hght - top))
 		} else {
@@ -14,6 +22,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// меню для маленьких экранов
 	$(".hide-nav-button").click(function(){
 		$(".nav.nav-top").toggle(500);
 		
@@ -26,10 +35,7 @@ $(document).ready(function() {
 			} else {
 				secondLevelMenu.hide(500);
 				secondLevelMenu.removeClass("active");
-			}
-			
-
-		
+			}		
 		});
 	});
 

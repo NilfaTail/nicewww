@@ -14,6 +14,9 @@
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
+	<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+
 </head>
 
 <body>
@@ -24,6 +27,7 @@
 				<h1 class="text-align">that's my site!</h1>
 			</div>
 		</div>
+		
 		<div id="navigationTop">
 			<div class="container">
 				<div class="">
@@ -87,8 +91,7 @@
 		</div>	
 	</div>
 
-	<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="/js/main.js"></script>
+
 	<script type="text/javascript" src="/js/particles/particles.js" defer></script>
 	<script type="text/javascript" src="/js/particles/parts.js" defer></script>
 
