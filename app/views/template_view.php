@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/png">
+
 	<title>nicewww.ru - Главная</title>
 
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
@@ -28,12 +31,18 @@
 						<div class="hide-nav-button">menu</div>
 					</div>
 
-
 					<ul class="nav nav-top">
 						<li class="nav-item">
-							<a href="/">Home</a></li>
+							<a href="/" title="">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="/gui" title="">GUI</a>
+						</li>
+						<li class="nav-item">
+							<a href="/contacts" title="">Контакты</a>							
+						</li>
 						<li class="nav-item nav-item-second">
-							<a href="javascript:void(0);" class="">GUI и второе меню <i class="fas fa-caret-down"></i></a>
+							<a href="javascript:void(0);" class="">Второе меню <i class="fas fa-caret-down"></i></a>
 							<ul class="nav nav-top nav-second">
 								<li>
 									<a href="">Ссылка 1</a>
@@ -45,12 +54,11 @@
 									<a href="">Ссылка 3</a>
 								</li>
 							</ul>
-						</li>
+						</li>						
 						<li class="nav-item"><a href="/services">Услуги</a></li>
 						<li class="nav-item"><a href="/portfolio">Портфолио</a></li>
 						<li class="nav-item nav-item-second">
-							<!--<a href="/contacts">Контакты</a>-->
-							<a href="javascript:void(0);" class="">Контакты <i class="fas fa-caret-down"></i></a>
+							<a href="javascript:void(0);" class="">Еще второе меню <i class="fas fa-caret-down"></i></a>
 							<ul class="nav nav-top nav-second">
 								<li>
 									<a href="">Ссылка 1</a>

@@ -358,8 +358,10 @@ table.table thead tr th {
   border: 1px solid #5dbd7d;
   background: #313740;
   color: #5dbd7d;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.1px;
   font-weight: 400;
+  font-size: 14px;
+  text-align: left;
 }
 
 table.table tbody td {
