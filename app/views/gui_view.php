@@ -1,4 +1,4 @@
-<article>
+<div class='article'>
 	
 <h1>
 	GUI
@@ -50,7 +50,7 @@
 		<caption>Простая таблица с классом <code>.table</code></caption>
 		<thead>
 			<tr>
-				<th>Столбец 1</th>
+				<th >Столбец 1</th>
 				<th>Столбец 2</th>
 				<th>Столбец 3</th>
 			</tr>
@@ -104,4 +104,4 @@
 
 
 
-</article>
+</div>
