@@ -86,16 +86,15 @@ header, footer {
 }
 
 .rightNavigation {
-  width: 300px;
+  width: 275px;
   position: fixed;
   top: 195px;
-  left: calc(62% + 45px);
-  /*right: 0;*/
-
+  left: 65%;
   background: rgba(0, 0, 0, 0.15);
   border: 1px solid #dedede;
   padding: 20px;
 }
+
 
 /*
 ** FONTS
@@ -326,7 +325,17 @@ ul.nav.nav-top li:hover ul.nav.nav-top.nav-second {
 .text-left {
   text-align: left;
 }
+@media (max-width: 1366px) {
+  .rightNavigation {
+    left: calc(65% + 80px);
+  }
+}
 
+@media (max-width: 1024px) {
+  .rightNavigation {
+    width: 260px;
+  }
+}
 @media (max-width: 768px) {
   .hide-nav {
     display: block;
@@ -354,6 +363,18 @@ ul.nav.nav-top li:hover ul.nav.nav-top.nav-second {
   }
   img {
     width: 100%;
+  }
+  .rightNavigation {
+    width: 200px;
+    left: calc(65% + 60px);
+  }
+}
+@media (max-width: 812px) {
+  .article.article-70 {
+    width: 100%;
+  }
+  .rightNavigation {
+    display: none;
   }
 }
 
