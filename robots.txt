@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /old/
+Disallow: /app/controllers/
+Disallow: /app/core/
+Disallow: /app/models/
+
+Sitemap: http://nicewww.ru/sitemap.xml
+Host: http://nicewww.ru
