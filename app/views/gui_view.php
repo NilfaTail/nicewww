@@ -147,6 +147,7 @@
 		</div>
 	</div>
 
+	<div class="row">
 	<a name="forms"></a>
 	<h3>Компоненты форм</h3>
 
@@ -154,38 +155,46 @@
 	
 		<div class="form-group">
 			<label class="col-2" for="username">User</label>
-			<input type="text" id="username" placeholder="Username" name="user">
+			<div class="col-6">
+				<input class="col-12" type="text" id="username" placeholder="Username" name="user">
+			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-2" for="password">Password</label>
-			<input type="password" id="password" name="pass">
+			<div class="col-6">
+				<input class="col-12" type="password" id="password" name="pass">
+			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-2" for="selecttype">Select</label>
-			<select id="selecttype" name="textselect">
-				<option>item 1</option>
-				<option>item 2</option>
-				<option>item 3</option>
-			</select>
+			<div class="col-6">
+				<select class="col-12" id="selecttype" name="textselect">
+					<option>item 1</option>
+					<option>item 2</option>
+					<option>item 3</option>
+				</select>
+			</div>
 		</div>
-
 		<div class="form-group">
 			<label class="col-2" for="file">File</label>
-			<input type="file" id="file" name="fileform" placeholder="choose file...">
+			<div class="col-6">
+				<input class="col-12" type="file" id="file" name="fileform" placeholder="choose file...">
+			</div>
 		</div>
-
-		<div>
+		<div class="form-group">
 			<label class="col-2" for="textarea">Comment</label>
-			<textarea id="textarea" name="comment"></textarea>	
+			<div class="col-6">
+				<textarea class="col-12" id="textarea" name="comment"></textarea>		
+			</div>			
 		</div>
 		
-
-		<div>
+		<div class="form-group">
 			<input type="submit" value="OK">
 			<input type="reset" value="Reset">
 		</div>
 
 	</form>
+	</div>
 
 </div>
 

@@ -433,6 +433,8 @@ table.table.table-hovered tbody tr:hover{
   line-height: 22px;
 }
 
+label {font-size: 15px;}
+
 input[type=checkbox], input[type=radio] {display: none;}
 
 input[type=checkbox] + label,
@@ -512,8 +514,13 @@ input[type=radio]:focus + label:before {
   box-shadow: 0 0 0 3px rgba(255,255,0,.7);
 }
 
+form {
+  margin: 10px 0;
+}
+
 .form-group {
-  margin: 5px 0;
+  padding: 5px 0;
+  clear: both;
 }
 
 input[type=text],
@@ -529,6 +536,20 @@ select {
 label + textarea {
   vertical-align: top;
 }
+
+/*
+* buttons
+*/
+
+input[type=submit],
+input[type=reset] {
+  border: 1px solid #1E7B3E;
+  padding: 4px 10px;
+  background: #588E6A;
+  color: #fff;
+  cursor: pointer;
+}
+
 /*
 * side menu
 */
@@ -550,16 +571,35 @@ label + textarea {
 /*
 * colums
 */
+.row {
+  display: block;
+  clear: both;
+}
 
-.col-1 { width:  8.333333%; display: inline-block;}
-.col-2 { width: 16.666667%; display: inline-block;}
-.col-3 { width: 25%; display: inline-block;}
-.col-4 { width: 33.333333%; display: inline-block;}
-.col-5 { width: 41.666667%; display: inline-block;}
-.col-6 { width: 50%; display: inline-block;}
-.col-7 { width: 58.333333%; display: inline-block;}
-.col-8 { width: 66.666667%; display: inline-block;}
-.col-9 { width: 75%; display: inline-block;}
-.col-10 { width: 83.333333%; display: inline-block;}
-.col-11 { width: 91.666667%; display: inline-block;}
-.col-12 { width: 100%; display: inline-block;}
+.col-1 { width:  8.333333%; display: inline-block; float: left;}
+.col-2 { width: 16.666667%; display: inline-block; float: left;}
+.col-3 { width: 25%; display: inline-block; float: left;}
+.col-4 { width: 33.333333%; display: inline-block; float: left;}
+.col-5 { width: 41.666667%; display: inline-block; float: left;}
+.col-6 { width: 50%; display: inline-block; float: left;}
+.col-7 { width: 58.333333%; display: inline-block; float: left;}
+.col-8 { width: 66.666667%; display: inline-block; float: left;}
+.col-9 { width: 75%; display: inline-block; float: left;}
+.col-10 { width: 83.333333%; display: inline-block; float: left;}
+.col-11 { width: 91.666667%; display: inline-block; float: left;}
+.col-12 { width: 100%; display: inline-block; float: left;}
+
+.col-1:after,
+.col-2:after,
+.col-3:after,
+.col-4:after,
+.col-5:after,
+.col-6:after,
+.col-7:after,
+.col-8:after,
+.col-9:after,
+.col-10:after,
+.col-11:after,
+.col-12:after, {
+  clear: both;
+}
