@@ -162,7 +162,7 @@
 		<div class="form-group">
 			<label class="col-2" for="password">Password</label>
 			<div class="col-6">
-				<input class="col-12" type="password" id="password" name="pass">
+				<input class="col-12" type="password" id="password" placeholder="******" name="pass">
 			</div>
 		</div>
 		<div class="form-group">
@@ -184,7 +184,7 @@
 		<div class="form-group">
 			<label class="col-2" for="textarea">Comment</label>
 			<div class="col-6">
-				<textarea class="col-12" id="textarea" name="comment"></textarea>		
+				<textarea class="col-12" id="textarea" name="comment" placeholder="Type here"></textarea>		
 			</div>			
 		</div>
 		
