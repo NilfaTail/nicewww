@@ -157,7 +157,7 @@ h2 {
 }
 h3 {
   font-size: 20px;
-  margin-bottom: 6px;
+  margin: 6px 0;
   padding: 4px 0;
 }
 h4 {
@@ -423,6 +423,97 @@ table.table tbody td {
 table.table.table-hovered tbody tr:hover{
   background: #cde5cd;
 }
+
+/*
+** turn on/off
+*/
+
+.check, .radio {
+  line-height: 22px;
+}
+
+input[type=checkbox], input[type=radio] {display: none;}
+
+input[type=checkbox] + label,
+input[type=radio] + label {
+  cursor: pointer;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2713";
+  color: transparent;
+  display: inline-block;
+  border: 1px solid #588E6A;
+  font-size: 16px;    
+  line-height: 16px;
+  margin: -4px 5px 0 0;
+  height: 16px;
+  width: 16px;
+  text-align: center; 
+  vertical-align: middle;
+  transition: color ease .3s;
+  font-weight: 800;
+}
+
+input[type=checkbox]:checked + label:before {
+  color: #588E6A;
+}
+
+input[type=checkbox]:disabled + label:before {
+  border: 1px solid #aaa;
+  background: #eee;
+}
+input[type=checkbox]:disabled:checked + label:before {
+  color: #aaa;
+}
+
+
+input[type=radio] + label {
+  position: relative;
+  padding: 0 0 0 21px;
+  cursor: pointer;
+}
+input[type=radio] + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #588E6A;
+  border-radius: 50%;
+  background: #FFF;
+}
+input[type=radio] + label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #588E6A;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transition: .2s;
+}
+input[type=radio]:disabled + label:before {
+  border: 1px solid #aaa;
+  background: #eee;
+}
+input[type=radio]:checked:disabled + label:after {
+  background: #aaa;
+}
+input[type=radio]:checked + label:after {
+  opacity: 1;
+}
+input[type=radio]:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(255,255,0,.7);
+}
+
+/*
+* side menu
+*/
 
 .rightNavigation ul {
   list-style: none;

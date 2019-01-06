@@ -103,6 +103,50 @@
 			</tr>
 		</tbody>
 	</table>
+
+	<a name="turns"></a>
+	<h2>Переключатели</h2>
+	
+	<h3>Checkboxes</h3>
+	<div class="">
+		<div class="check">
+		  <input type="checkbox" name="check" id="check-1" />
+		  <label for="check-1">Checkbox 1 (UNchecked)</label>
+		</div>
+		<div class="check">
+		  <input type="checkbox" name="check" id="check-2" checked />
+		  <label for="check-2">Checkbox 2 (checked)</label>
+		</div>
+		<div class="check">
+		  <input type="checkbox" name="check" id="check-3"  disabled />
+		  <label for="check-3">Checkbox 3 (disabled)</label>
+		</div>
+		<div class="check">
+		  <input type="checkbox" name="check" id="check-4"  disabled checked />
+		  <label for="check-4">Checkbox 4 (checked disabled)</label>
+		</div>
+	</div>
+
+	<h3>Radio Buttons</h3>
+	<div class="">
+		<div class="radio">
+		  <input type="radio" id="radio-1" name="radio" checked/>
+		  <label for="radio-1">Radio 1 (checked)</label>
+		</div>
+		<div class="radio">
+		  <input type="radio" id="radio-2" name="radio" />
+		  <label for="radio-2">Radio 2 (UNchecked)</label>
+		</div>
+		<div class="radio">
+		  <input type="radio" id="radio-3" name="radio1" disabled />
+		  <label for="radio-3">Radio 3 (disabled)</label>
+		</div>
+		<div class="radio">
+		  <input type="radio" id="radio-4" name="radio1" disabled checked />
+		  <label for="radio-4">Radio 4 (checked disabled)</label>
+		</div>
+	</div>
+
 </div>
 
 <div class='rightNavigation'>
@@ -118,6 +162,9 @@
 		</li>
 		<li>
 			<a href="#tables">Таблицы</a>
-		</li>		
+		</li>
+		<li>
+			<a href="#turns">Переключатели</a>
+		</li>
 	</ul>
 </div>
