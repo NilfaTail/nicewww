@@ -58,7 +58,8 @@
 									<a href="">Ссылка 3</a>
 								</li>
 							</ul>
-						</li>						
+						</li>
+						<!--				
 						<li class="nav-item"><a href="/services">Услуги</a></li>
 						<li class="nav-item"><a href="/portfolio">Портфолио</a></li>
 						<li class="nav-item nav-item-second">
@@ -75,6 +76,7 @@
 								</li>
 							</ul>
 						</li>
+						-->
 					</ul>
 				</div>
 			</div>

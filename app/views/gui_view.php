@@ -147,6 +147,46 @@
 		</div>
 	</div>
 
+	<a name="forms"></a>
+	<h3>Компоненты форм</h3>
+
+	<form role="form">
+	
+		<div class="form-group">
+			<label class="col-2" for="username">User</label>
+			<input type="text" id="username" placeholder="Username" name="user">
+		</div>
+		<div class="form-group">
+			<label class="col-2" for="password">Password</label>
+			<input type="password" id="password" name="pass">
+		</div>
+		<div class="form-group">
+			<label class="col-2" for="selecttype">Select</label>
+			<select id="selecttype" name="textselect">
+				<option>item 1</option>
+				<option>item 2</option>
+				<option>item 3</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label class="col-2" for="file">File</label>
+			<input type="file" id="file" name="fileform" placeholder="choose file...">
+		</div>
+
+		<div>
+			<label class="col-2" for="textarea">Comment</label>
+			<textarea id="textarea" name="comment"></textarea>	
+		</div>
+		
+
+		<div>
+			<input type="submit" value="OK">
+			<input type="reset" value="Reset">
+		</div>
+
+	</form>
+
 </div>
 
 <div class='rightNavigation'>
@@ -165,6 +205,9 @@
 		</li>
 		<li>
 			<a href="#turns">Переключатели</a>
+		</li>
+		<li>
+			<a href="#forms">Формы</a>
 		</li>
 	</ul>
 </div>

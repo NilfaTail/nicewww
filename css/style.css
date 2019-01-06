@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *::before,
 *::after {
@@ -511,6 +512,23 @@ input[type=radio]:focus + label:before {
   box-shadow: 0 0 0 3px rgba(255,255,0,.7);
 }
 
+.form-group {
+  margin: 5px 0;
+}
+
+input[type=text],
+input[type=password],
+input[type=user],
+input[type=file],
+textarea,
+select {
+  padding: 4px;
+  border: 1px solid #5dbd7d;
+}
+
+label + textarea {
+  vertical-align: top;
+}
 /*
 * side menu
 */
@@ -528,3 +546,20 @@ input[type=radio]:focus + label:before {
 .rightNavigation ul li a:hover {
   border-bottom: 1px solid;
 }
+
+/*
+* colums
+*/
+
+.col-1 { width:  8.333333%; display: inline-block;}
+.col-2 { width: 16.666667%; display: inline-block;}
+.col-3 { width: 25%; display: inline-block;}
+.col-4 { width: 33.333333%; display: inline-block;}
+.col-5 { width: 41.666667%; display: inline-block;}
+.col-6 { width: 50%; display: inline-block;}
+.col-7 { width: 58.333333%; display: inline-block;}
+.col-8 { width: 66.666667%; display: inline-block;}
+.col-9 { width: 75%; display: inline-block;}
+.col-10 { width: 83.333333%; display: inline-block;}
+.col-11 { width: 91.666667%; display: inline-block;}
+.col-12 { width: 100%; display: inline-block;}
