@@ -45,6 +45,9 @@
 						<li class="nav-item">
 							<a href="/contacts" title="">Контакты</a>							
 						</li>
+						<li class="nav-item">
+							<a href="/issues" title="">Задачи</a>
+						</li>
 						<li class="nav-item nav-item-second">
 							<a href="javascript:void(0);" class="">Второе меню <i class="fas fa-caret-down"></i></a>
 							<ul class="nav nav-top nav-second">
@@ -60,7 +63,7 @@
 							</ul>
 						</li>
 						<!--				
-						<li class="nav-item"><a href="/services">Услуги</a></li>
+						
 						<li class="nav-item"><a href="/portfolio">Портфолио</a></li>
 						<li class="nav-item nav-item-second">
 							<a href="javascript:void(0);" class="">Еще второе меню <i class="fas fa-caret-down"></i></a>
