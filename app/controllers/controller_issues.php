@@ -1,11 +1,11 @@
 <?php
 
-class Controller_Services extends Controller {
+class Controller_Issues extends Controller {
 
 	// В метод generate экземпляра класса View передаются имена файлов общего шаблона и вида c контентом страницы.
 	function action_index()
 	{	
-		$this->view->generate('services_view.php', 'template_view.php');
+		$this->view->generate('issues_view.php', 'template_view.php');
 	}
 
 }
