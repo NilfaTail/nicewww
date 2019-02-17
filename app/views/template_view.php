@@ -25,6 +25,7 @@
 		<div class="header-info">
 			<div class="container">
 				<h1 class="text-align">that's my site!</h1>
+				<div class="spec-info"><?php echo( $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] ) ; ?></div>
 			</div>
 		</div>
 
@@ -45,6 +46,10 @@
 						<li class="nav-item">
 							<a href="/contacts" title="">Контакты</a>							
 						</li>
+						<li class="nav-item">
+							<a href="/issues" title="">Задачи</a>
+						</li>
+						<!--
 						<li class="nav-item nav-item-second">
 							<a href="javascript:void(0);" class="">Второе меню <i class="fas fa-caret-down"></i></a>
 							<ul class="nav nav-top nav-second">
@@ -59,10 +64,9 @@
 								</li>
 							</ul>
 						</li>
-						<!--				
-						<li class="nav-item"><a href="/services">Услуги</a></li>
+						-->
 						<li class="nav-item"><a href="/portfolio">Портфолио</a></li>
-						<li class="nav-item nav-item-second">
+						<!--<li class="nav-item nav-item-second">
 							<a href="javascript:void(0);" class="">Еще второе меню <i class="fas fa-caret-down"></i></a>
 							<ul class="nav nav-top nav-second">
 								<li>

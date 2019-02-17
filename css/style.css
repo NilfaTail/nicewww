@@ -32,6 +32,11 @@ header, footer {
   background: linear-gradient(to bottom, #034816 0%,#313740 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#034816', endColorstr='#313740',GradientType=0 );
 }
+.header-info .spec-info {
+  margin-top: -16px;
+  font-size: 12px;
+  color: #dedede;
+}
 
 #navigationTop {
   position: fixed;
@@ -235,6 +240,15 @@ code, pre {
   padding: 0 4px;
   font-size: 14px;
   font-family: monospace;
+}
+
+label {
+  background: #dedede;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 2px;
 }
 
 /*
@@ -643,4 +657,117 @@ input[type=reset]:hover, input[type=reset]:focus{
 .col-11:after,
 .col-12:after, {
   clear: both;
+}
+
+.image {
+  overflow: hidden;
+}
+
+.image img {
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  width: 100%;
+}
+ 
+.image img:hover{
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -o-transform: scale(1.15);
+}
+
+
+/*
+** heart
+*/
+
+.heart-wrap {
+  padding: 280px 0 0 0;
+}
+
+.heart {
+  animation: heartbeat 1s infinite;
+  background-color: #d51d1d;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  transform: rotate(-45deg);
+  position: absolute; 
+  left: 45%; 
+  top: 45%;  
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #d51d1d;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  position: absolute;  
+}
+
+.heart:before {
+  top: -40px;
+  left: 0;
+}
+
+.heart:after {
+  left: 40px;
+  top: 0;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( 1 )
+      rotate(-45deg);    
+  }
+  20%
+  {
+    transform: scale( 1.25 )
+      rotate(-45deg);  
+  }
+   40%
+  {
+    transform: scale( 1.5 )
+      rotate(-45deg);
+  }
+}
+
+/*
+** Portfolio
+*/
+
+.flex-row{
+  display: flex;
+  clear: both;
+  padding: 15px 0 25px;
+}
+
+.portfolio-gallery {
+  padding: 0;
+  width: 35%;
+  height: auto;
+}
+
+.portfolio-gallery-image-cur {
+
+}
+.portfolio-info {
+  padding: 0 15px;
+  width: 65%;
+}
+.portfolio-info-descr {
+  margin-top: 20px;
+}
+
+.portfolio-info-period {
+  font-size: 12px;
+  padding: 0px 0 4px;
+}
+
+.portfolio-info-skills {
+  line-height: 1.6;
 }
