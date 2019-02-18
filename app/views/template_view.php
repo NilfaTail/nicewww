@@ -47,7 +47,10 @@
 							<a href="/contacts" title="">Контакты</a>							
 						</li>
 						<li class="nav-item">
-							<a href="/issues" title="">Задачи</a>
+							<a href="/issues" title="">Задачи js</a>
+						</li>
+						<li class="nav-item">
+							<a href="/issuesphp" title="">Задачи php</a>
 						</li>
 						<!--
 						<li class="nav-item nav-item-second">

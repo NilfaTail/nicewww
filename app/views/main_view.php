@@ -15,8 +15,8 @@
 <div class='article'>
 	<h2>А теперь серьезно</h2>
 	<p>Мне нужен план развития на ближайший год и более ближайшее время.</p>
-
-	<table class="table table-hovered">
+	<div class="table-responsible">
+		<table class="table table-hovered">
 		<thead>
 			<tr>
 				<th width="40%">Что надо сделать</th>
@@ -72,8 +72,7 @@
 			</tr>
 		</tbody>
 	</table>
-
-
+	</div>
 </div>
 <div class='article'>
 	<p>И помните, потролить самого себя - бесценно</p>
