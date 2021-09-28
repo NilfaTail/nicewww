@@ -11,7 +11,7 @@ class Model_Portfolio extends Model
 				'Description' => 'Сайт для Международной Академии Фехтовальных Искусств в г.Санкт-Петербург. ',
 				'Skills' => [
 					'Конструктор сайтов Асконт',
-					'Редизайн дизайн',
+					'Редизайн',
 					'Поддержка'	
 				],
 				'Preview' => '/img/portfolio/fencinggroup-ru/fencinggroup.ru_preview.png'
@@ -20,7 +20,7 @@ class Model_Portfolio extends Model
 				'Year' => '2018',
 				'Site' => 'http://artfencing.spb.ru/',
 				'Description' => 'Сайт для мероприятия Олимпиада Артестического фехтования в Выборге',
-				'Skills' => ['WordPress', 'Дизайн'],
+				'Skills' => ['WordPress', 'Дизайн', 'Разработка'],
 				'Preview' => '/img/portfolio/artfencing-spb-ru/artfencing.spb.ru_preview.png'
 			],
 			[
@@ -29,7 +29,29 @@ class Model_Portfolio extends Model
 				'Description' => 'Сайт ювелирных изделий Carrera-y-Carrera. Канадский филиал.',
 				'Skills' => ['WordPress', 'Woocommerce', 'Поддержка'],
 				'Preview' => '/img/portfolio/carreraycarrera-ca/carreraycarrera.ca-preview.jpg'
+			],
+			[
+				'Year' => '2019 - 2019',
+				'Site' => 'https://igisp.ru/',
+				'Description' => 'ИНСТИТУТ ГРУППОВОЙ И СЕМЕЙНОЙ ПСИХОЛОГИИ И ПСИХОТЕРАПИИ',
+				'Skills' => ['WordPress', 'Разработка'],
+				'Preview' => '/img/portfolio/400_200.jpg'
+			],
+			[
+				'Year' => '2020 - 2021',
+				'Site' => 'https://ministry-of-magic.ru/',
+				'Description' => 'Хобби. Министерство магии',
+				'Skills' => ['WordPress', 'Дизайн', 'Разработка', 'Поддержка'],
+				'Preview' => '/img/portfolio/400_200.jpg'
+			],
+			[
+				'Year' => '2020 - 2021',
+				'Site' => 'https://shoku-yoku.ru/',
+				'Description' => 'СёкуЁку 食欲. Японское вагаси кафе',
+				'Skills' => ['Лэндинг', 'Дизайн', 'Разработка', 'Поддержка'],
+				'Preview' => '/img/portfolio/400_200.jpg'
 			]
+			
 		];
 
 		return $data;
