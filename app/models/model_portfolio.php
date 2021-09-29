@@ -35,21 +35,21 @@ class Model_Portfolio extends Model
 				'Site' => 'https://igisp.ru/',
 				'Description' => 'ИНСТИТУТ ГРУППОВОЙ И СЕМЕЙНОЙ ПСИХОЛОГИИ И ПСИХОТЕРАПИИ',
 				'Skills' => ['WordPress', 'Разработка'],
-				'Preview' => '/img/portfolio/400_200.jpg'
+				'Preview' => '/img/portfolio/igisp-ru/igisp-ru.png'
 			],
 			[
 				'Year' => '2020 - 2021',
 				'Site' => 'https://ministry-of-magic.ru/',
 				'Description' => 'Хобби. Министерство магии',
 				'Skills' => ['WordPress', 'Дизайн', 'Разработка', 'Поддержка'],
-				'Preview' => '/img/portfolio/400_200.jpg'
+				'Preview' => '/img/portfolio/ministry-of-magic-ru/ministry-of-magic.png'
 			],
 			[
 				'Year' => '2020 - 2021',
 				'Site' => 'https://shoku-yoku.ru/',
 				'Description' => 'СёкуЁку 食欲. Японское вагаси кафе',
 				'Skills' => ['Лэндинг', 'Дизайн', 'Разработка', 'Поддержка'],
-				'Preview' => '/img/portfolio/400_200.jpg'
+				'Preview' => '/img/portfolio/shoku-yoku-ru/shoku-yoku.png'
 			]
 			
 		];

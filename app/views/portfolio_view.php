@@ -7,7 +7,7 @@
 		<div class="portfolio-row flex-row"> <!-- одна работа -->
 			<div class="portfolio-gallery"><!-- одна работа -->
 				<div class="portfolio-gallery-image-cur image" >
-					<img src="http://nicewww.ru/<?php echo $row['Preview']?>" alt=""/>
+					<img src="https://nicewww.ru/<?php echo $row['Preview']?>" alt=""/>
 				</div>
 				<!--
 				<div class="portfolio-gallety-images-slide" style="display: flex; justify-content: space-between;">
